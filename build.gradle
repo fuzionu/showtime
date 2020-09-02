@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'showtime.Main'
+
+repositories
+        {
+            mavenCentral()
+        }
+
+dependencies
+        {
+            sourceCompatibility = JavaVersion.VERSION_11
+            targetCompatibility = JavaVersion.VERSION_11
+        }
+
+test
+        {
+            useJUnitPlatform()
+        }
+
